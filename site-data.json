@@ -1,0 +1,179 @@
+{
+  "title": "Apartamento à venda em Botafogo",
+  "address": "Rua Álvaro Ramos, Botafogo, Rio de Janeiro",
+  "price": "R$ 1.295.000",
+  "condo": "R$ 2.100/mês",
+  "area": "111 m²",
+  "oldPrice": "R$ 1.450.000",
+  "saleMode": "Venda direta",
+  "iptu": "R$ 5.363 (2026 pago)",
+  "whatsapp": "5521991095173",
+  "driveUrl": "https://drive.google.com/drive/folders/1fyGblGpFcButd3tHmLkZ0zgQsusS-Hfg?usp=sharing",
+  "pdfUrl": "imovel.pdf",
+  "heroImage": "images/projeto-varanda.webp",
+  "photos": [
+    {
+      "src": "images/sala-cozinha.webp",
+      "alt": "Sala ampla com cozinha americana integrada e varandão ao fundo"
+    },
+    {
+      "src": "images/sala-entrada.webp",
+      "alt": "Sala de estar com entrada e cozinha americana ao fundo"
+    },
+    {
+      "src": "images/varanda.webp",
+      "alt": "Varandão amplo com revestimento em madeira"
+    },
+    {
+      "src": "images/cozinha-servico.webp",
+      "alt": "Cozinha com bancada de granito e área de serviço"
+    },
+    {
+      "src": "images/corredor.webp",
+      "alt": "Corredor de acesso aos quartos"
+    },
+    {
+      "src": "images/quarto-suite.webp",
+      "alt": "Quarto com varanda e ar-condicionado"
+    },
+    {
+      "src": "images/quarto2.webp",
+      "alt": "Quarto com janela, prepara??o para ar-condicionado e ventila??o natural"
+    },
+    {
+      "src": "images/quarto3.webp",
+      "alt": "Suíte com acesso à varanda, ar-condicionado e corredor de acesso ao banheiro"
+    },
+    {
+      "src": "images/banheiro-social.webp",
+      "alt": "Banheiro social com box de vidro e bancada em mármore"
+    },
+    {
+      "src": "images/banheiro-suite.webp",
+      "alt": "Banheiro da suíte com box e bancada em mármore"
+    },
+    {
+      "src": "images/salao-festas.webp",
+      "alt": "Salão de festas do prédio com espaço de convivência"
+    },
+    {
+      "src": "images/playground.webp",
+      "alt": "Área de lazer infantil no play do prédio"
+    }
+  ],
+  "highlights": [
+    "3 quartos, sendo 1 suíte",
+    "1 banheiro social",
+    "Dependência completa com quarto e banheiro",
+    "Sala ampla",
+    "Varandão",
+    "Cozinha americana",
+    "Área de serviço",
+    "2 vagas na escritura"
+  ],
+  "building": [
+    "2 apartamentos por andar",
+    "10 moradores no total",
+    "Portaria",
+    "Salão de festas",
+    "Playground infantil",
+    "Ambiente muito tranquilo"
+  ],
+  "buildingCards": [
+    {
+      "title": "2 apartamentos por andar",
+      "description": "Apenas 10 moradores, com clima silencioso e familiar."
+    },
+    {
+      "title": "Altura de 3º andar",
+      "description": "Embora seja 1º andar, garagem e play ficam abaixo do apartamento."
+    },
+    {
+      "title": "Portaria",
+      "description": "Controle de acesso para mais praticidade no dia a dia."
+    },
+    {
+      "title": "Lazer no prédio",
+      "description": "Salão de festas e playground infantil."
+    }
+  ],
+  "location": [
+    "Rua Álvaro Ramos, 42, Botafogo",
+    "Shopping Rio Sul a cerca de 5 minutos",
+    "Metrô Botafogo a aproximadamente 8 minutos a pé",
+    "Cobal do Humaitá a poucos quarteirões",
+    "Acesso rápido a Copacabana, Flamengo e Centro"
+  ],
+  "visits": {
+    "summary": "As visitas precisam ser agendadas dentro dos horários em que o porteiro está disponível para abrir o prédio e liberar o apartamento.",
+    "hours": [
+      "Segunda a sexta: 8h às 17h",
+      "Sábado: 10h às 16h",
+      "Intervalo de almoço: 13h às 14h"
+    ],
+    "note": "Para visitar, envie o dia, horário desejado e nome de quem irá ao imóvel. Eu encaminho essas informações ao porteiro, que já está ciente e libera o acesso."
+  },
+  "projectPhotos": [
+    {
+      "src": "images/projeto-sala-cozinha.webp",
+      "original": "images/sala-cozinha.webp",
+      "title": "Sala e cozinha",
+      "summary": "Layout com sala próxima à varanda, mesa de jantar na lateral, TV fina e cozinha com geladeira à esquerda e cooktop à direita.",
+      "alt": "Projeto de interiores: sala integrada à cozinha americana, mantendo a perspectiva da foto real"
+    },
+    {
+      "src": "images/projeto-varanda.webp",
+      "original": "images/varanda.webp",
+      "title": "Varanda",
+      "summary": "Varandão mobiliado com leitura coerente da sala ao fundo, preservando a perspectiva da foto original.",
+      "alt": "Projeto de interiores: varandão mobiliado, mantendo a perspectiva da foto real"
+    },
+    {
+      "src": "images/projeto-cozinha-servico.webp",
+      "original": "images/cozinha-servico.webp",
+      "title": "Cozinha e área de serviço",
+      "summary": "Cozinha planejada com marcenaria clara, geladeira à esquerda, cooktop à direita e área de serviço organizada.",
+      "alt": "Projeto de interiores: cozinha e área de serviço, mantendo a perspectiva da foto real"
+    },
+    {
+      "src": "images/projeto-quarto-varanda.webp",
+      "original": "images/quarto-suite.webp",
+      "title": "Quarto com varanda",
+      "summary": "Quarto com cama de casal, marcenaria clara, cortinas e ar-condicionado, mantendo a porta para a varanda.",
+      "alt": "Projeto de interiores: quarto com varanda e ar-condicionado, mantendo a perspectiva da foto real"
+    },
+    {
+      "src": "images/projeto-quarto-home-office.webp",
+      "original": "images/quarto2.webp",
+      "title": "Quarto / home office",
+      "summary": "Quarto flexível com cama, mesa de trabalho e ar-condicionado instalado no ponto existente.",
+      "alt": "Projeto de interiores: quarto flexível com cama, home office e ar-condicionado, mantendo a perspectiva da foto real"
+    },
+    {
+      "src": "images/projeto-suite.webp",
+      "original": "images/quarto3.webp",
+      "title": "Suíte",
+      "summary": "Suíte com cama de casal, armários, piso em mármore branco, ar-condicionado e corredor preservado na composição.",
+      "alt": "Projeto de interiores: suíte com cama, armários e corredor visível, mantendo a perspectiva da foto real"
+    },
+    {
+      "src": "images/projeto-banheiro-social.webp",
+      "original": "images/banheiro-social.webp",
+      "title": "Banheiro social",
+      "summary": "Banheiro comprido com janela, pia à direita e acabamentos contemporâneos.",
+      "alt": "Projeto de interiores: banheiro social finalizado, mantendo a perspectiva da foto real"
+    },
+    {
+      "src": "images/projeto-banheiro-suite.webp",
+      "original": "images/banheiro-suite.webp",
+      "title": "Banheiro da suíte",
+      "summary": "Banheiro compacto sem janela visível, com pia à esquerda e acabamento atualizado.",
+      "alt": "Projeto de interiores: banheiro da suíte finalizado, mantendo a perspectiva da foto real"
+    }
+  ],
+  "notes": [
+    "Região em valorização crescente.",
+    "O imóvel passou por melhorias recentes.",
+    "As fotos atuais mostram o apartamento real, ainda com mobília."
+  ]
+}

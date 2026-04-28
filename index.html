@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apartamento 111 m² em Botafogo · R$ 1.295.000</title>
+    <meta
+      name="description"
+      content="Apartamento de 111 m² na Rua Álvaro Ramos, 42, Botafogo. 3 quartos, 1 suíte, varandão, 2 vagas e prédio tranquilo."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio">Botafogo 111 m²</a>
+      <nav aria-label="Navegação principal">
+        <a href="#fotos">Fotos</a>
+        <a href="#detalhes">Detalhes</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#visitas">Visitas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-media" id="heroMedia"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Rua Álvaro Ramos · Botafogo</p>
+          <h1>Apartamento de 111 m² com varandão e 2 vagas na escritura</h1>
+          <p class="hero-copy">
+            Planta generosa, sala integrada à cozinha americana, 3 quartos e prédio
+            tranquilo em uma das ruas mais agradáveis de Botafogo.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" id="whatsappHero" href="#">Falar no WhatsApp</a>
+            <a class="button secondary" href="#detalhes">Ver detalhes</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="facts" aria-label="Resumo do imóvel">
+        <div>
+          <span>Área</span>
+          <strong id="area">111 m²</strong>
+        </div>
+        <div>
+          <span>Valor</span>
+          <strong id="price">R$ 1.350.000</strong>
+        </div>
+        <div>
+          <span>Condomínio</span>
+          <strong id="condo">R$ 2.100/mês</strong>
+        </div>
+        <div>
+          <span>Vagas</span>
+          <strong>2</strong>
+        </div>
+      </section>
+
+      <section class="section" id="fotos">
+        <div class="section-heading">
+          <p class="eyebrow">Galeria</p>
+          <h2>Galeria de Fotos</h2>
+          <p>
+            Fotos reais e visualizações de projeto aparecem lado a lado para mostrar
+            o estado atual e o potencial dos ambientes.
+          </p>
+        </div>
+        <div class="gallery" id="gallery"></div>
+      </section>
+
+      <section class="section split" id="detalhes">
+        <div>
+          <p class="eyebrow">Configuração</p>
+          <h2>Planta confortável para morar bem em Botafogo</h2>
+          <ul class="check-list" id="highlights"></ul>
+        </div>
+        <aside class="info-panel">
+          <p class="eyebrow">Valores</p>
+          <h3 id="panelPrice">R$ 1.295.000</h3>
+          <dl class="price-list">
+            <div>
+              <dt>Condomínio</dt>
+              <dd id="panelCondo">R$ 2.100/mês</dd>
+            </div>
+            <div>
+              <dt>Venda</dt>
+              <dd id="saleMode">Direta</dd>
+            </div>
+            <div>
+              <dt>IPTU</dt>
+              <dd id="iptu">Sob consulta</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section building-band">
+        <div class="section-heading">
+          <p class="eyebrow">Prédio</p>
+          <h2>Tranquilo, familiar e com poucos moradores</h2>
+        </div>
+        <div class="building-grid" id="buildingCards"></div>
+      </section>
+
+      <section class="section location" id="localizacao">
+        <div>
+          <p class="eyebrow">Localização</p>
+          <h2>Botafogo, o coração da Zona Sul</h2>
+          <ul class="location-list" id="locationList"></ul>
+        </div>
+        <div class="map-frame">
+          <iframe
+            title="Localização do apartamento na Rua Álvaro Ramos"
+            src="https://www.google.com/maps?q=Rua%20%C3%81lvaro%20Ramos%2042%20Botafogo%20Rio%20de%20Janeiro&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="section notes">
+        <p class="eyebrow">Observações</p>
+        <h2>Informações importantes</h2>
+        <div id="notes"></div>
+      </section>
+
+      <section class="section visits" id="visitas">
+        <div>
+          <p class="eyebrow">Visitas</p>
+          <h2>Agendamento com portaria</h2>
+          <p id="visitSummary"></p>
+        </div>
+        <aside class="visit-panel">
+          <h3>Horários disponíveis</h3>
+          <ul id="visitHours"></ul>
+          <p id="visitNote"></p>
+        </aside>
+      </section>
+
+      <section class="contact" id="contato">
+        <div>
+          <p class="eyebrow">Contato</p>
+          <h2>Quer visitar ou receber mais informações?</h2>
+          <p>
+            O apartamento está na Rua Álvaro Ramos, em Botafogo. Para combinar visita
+            ou tirar dúvidas, fale diretamente pelo WhatsApp.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" id="whatsappContact" href="#">Chamar no WhatsApp</a>
+          <a class="button secondary" href="imovel.pdf">Baixar PDF</a>
+          <a class="button ghost" id="driveLink" href="#" target="_blank" rel="noreferrer">Fotos 2024</a>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Fechar foto">×</button>
+      <img id="lightboxImage" alt="" />
+      <p id="lightboxCaption"></p>
+    </dialog>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
