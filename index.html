@@ -9,6 +9,80 @@
       content="Apartamento de 111 m² na Rua Álvaro Ramos, 42, Botafogo. 3 quartos, 1 suíte, dependência completa, varandão, 2 vagas e prédio tranquilo."
     />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .lightbox-footer {
+        align-items: start;
+        color: var(--white);
+        display: flex;
+        gap: 18px;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding: 0 54px;
+      }
+
+      .lightbox-footer p {
+        color: var(--white);
+        margin: 0;
+      }
+
+      .lightbox-footer span {
+        color: rgba(255, 255, 255, 0.78);
+        flex: 0 0 auto;
+        font-weight: 800;
+      }
+
+      .lightbox-nav {
+        align-items: center;
+        background: rgba(255, 255, 255, 0.94);
+        border: 0;
+        border-radius: 999px;
+        color: var(--ink);
+        cursor: pointer;
+        display: flex;
+        font-size: 46px;
+        height: 54px;
+        justify-content: center;
+        line-height: 1;
+        padding: 0 0 5px;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 54px;
+        z-index: 2;
+      }
+
+      .lightbox-prev {
+        left: max(18px, calc((100vw - 94vw) / 2));
+      }
+
+      .lightbox-next {
+        right: max(18px, calc((100vw - 94vw) / 2));
+      }
+
+      @media (max-width: 820px) {
+        .lightbox-nav {
+          bottom: 22px;
+          height: 46px;
+          top: auto;
+          transform: none;
+          width: 46px;
+        }
+
+        .lightbox-prev {
+          left: 18px;
+        }
+
+        .lightbox-next {
+          right: 18px;
+        }
+
+        .lightbox-footer {
+          align-items: center;
+          margin-bottom: 76px;
+          padding: 0;
+        }
+      }
+    </style>
   </head>
   <body>
     <header class="topbar">
@@ -159,8 +233,13 @@
 
     <dialog class="lightbox" id="lightbox">
       <button class="lightbox-close" id="lightboxClose" aria-label="Fechar foto">×</button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Foto anterior">‹</button>
       <img id="lightboxImage" alt="" />
-      <p id="lightboxCaption"></p>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Próxima foto">›</button>
+      <div class="lightbox-footer">
+        <p id="lightboxCaption"></p>
+        <span id="lightboxCounter"></span>
+      </div>
     </dialog>
 
     <script src="app.js" type="module"></script>
