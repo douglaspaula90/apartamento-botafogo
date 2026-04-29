@@ -28,17 +28,35 @@ const gallery = document.getElementById("gallery");
 const lightbox = document.getElementById("lightbox");
 const lightboxImage = document.getElementById("lightboxImage");
 const lightboxCaption = document.getElementById("lightboxCaption");
+const lightboxCounter = document.getElementById("lightboxCounter");
+const lightboxPrev = document.getElementById("lightboxPrev");
+const lightboxNext = document.getElementById("lightboxNext");
+const galleryPhotos = [];
+let currentPhotoIndex = 0;
+
+function renderLightboxPhoto(index) {
+  if (!galleryPhotos.length) return;
+  currentPhotoIndex = (index + galleryPhotos.length) % galleryPhotos.length;
+  const photo = galleryPhotos[currentPhotoIndex];
+  lightboxImage.src = photo.src;
+  lightboxImage.alt = photo.alt || "Foto do apartamento";
+  lightboxCaption.textContent = photo.alt || "";
+  lightboxCounter.textContent = `${currentPhotoIndex + 1} / ${galleryPhotos.length}`;
+}
+
+function openLightbox(index) {
+  renderLightboxPhoto(index);
+  if (!lightbox.open) {
+    lightbox.showModal();
+  }
+}
 
 function addPhoto(target, photo, options = {}) {
+  const photoIndex = galleryPhotos.push(photo) - 1;
   const figure = document.createElement("button");
   figure.className = `photo ${options.featured ? "featured" : ""} ${options.project ? "project-photo" : ""} ${options.real ? "real-photo" : ""}`;
   figure.type = "button";
-  figure.addEventListener("click", () => {
-    lightboxImage.src = photo.src;
-    lightboxImage.alt = photo.alt || "Foto do apartamento";
-    lightboxCaption.textContent = photo.alt || "";
-    lightbox.showModal();
-  });
+  figure.addEventListener("click", () => openLightbox(photoIndex));
 
   const img = document.createElement("img");
   img.src = photo.src;
@@ -134,8 +152,30 @@ document.getElementById("lightboxClose").addEventListener("click", () => {
   lightbox.close();
 });
 
+lightboxPrev.addEventListener("click", (event) => {
+  event.stopPropagation();
+  renderLightboxPhoto(currentPhotoIndex - 1);
+});
+
+lightboxNext.addEventListener("click", (event) => {
+  event.stopPropagation();
+  renderLightboxPhoto(currentPhotoIndex + 1);
+});
+
 lightbox.addEventListener("click", (event) => {
   if (event.target === lightbox) {
     lightbox.close();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (!lightbox.open) return;
+  if (event.key === "ArrowLeft") {
+    event.preventDefault();
+    renderLightboxPhoto(currentPhotoIndex - 1);
+  }
+  if (event.key === "ArrowRight") {
+    event.preventDefault();
+    renderLightboxPhoto(currentPhotoIndex + 1);
   }
 });
